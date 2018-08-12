@@ -1,3 +1,1 @@
-from .card import CardNumber
-from .iban import IBAN
-from .nationalid import NationalID
+from .card import validate as card_validate
