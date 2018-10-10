@@ -29,6 +29,13 @@ IBAN_CODES = {
 
 
 def validate(iban):
+    """
+    validate iban number
+    :param iban: iban number
+    :type iban: str
+    :return: True or False
+    :rtype: bool
+    """
     if isinstance(iban, str):
         x = IBAN_CODES[iban[0]]
         k = IBAN_CODES[iban[1]]
@@ -36,7 +43,3 @@ def validate(iban):
         iban = int(iban)
         return iban % 97 == 1
     return False
-
-
-print(validate("IR062960000000100324200001"))
-print(validate("IR130120020000004901194495"))

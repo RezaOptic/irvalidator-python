@@ -76,6 +76,13 @@ BANK_CODES = {
 
 
 def validate(card_number):
+    """
+    validate credit card number
+    :param card_number: credit card number
+    :type card_number: str
+    :return: card number is valid or not and bank name
+    :rtype: dict
+    """
     result = {"is_valid": False}
     temp = 0
     if len(card_number) == 16:
