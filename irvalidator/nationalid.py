@@ -14,6 +14,6 @@ def validate(national_id):
     r = divmod(temp, 11)[1]
     if r < 2 and r == national_id[0]:
         return True
-    elif r > 2 and (11 - r) == national_id[0]:
+    elif r >= 2 and (11 - r) == national_id[0]:
         return True
     return False
