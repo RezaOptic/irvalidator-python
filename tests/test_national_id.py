@@ -17,4 +17,4 @@ class NationalIdTest(IrValidatorTests):
 
     def test_validate_national_id_without_zero__return_is_invalid(self):
         result = national_id_validator(self.incorrect_national_without_zero)
-        self.assertEqual(result, True)
+        self.assertEqual(result, False)
